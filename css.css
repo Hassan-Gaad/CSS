@@ -1,9 +1,79 @@
-h4{
-    color: lightcoral;
+/* universal selector */
+*{
+    color: black;
 }
-.h1Class{
-    color: lightgray;
+
+/* combinators selector */
+
+    /* comma combinator */
+
+h1,h2,h3,h4{
+    color: lightseagreen;
 }
-#h2Id{
-    color: blueviolet;
-}
+
+/* space selector  */
+    /* select all p inside div even if it is not it's direct parent */
+    div p
+    {
+        color:blue
+    }
+
+/* greater than selector */
+    /* select all p inside div where div its direct parent is div*/
+    div>p{
+        color: blueviolet;
+    }
+
+/* plus than selector */
+    /* select all FIRST p that comes after div */
+    div+p{
+        color: aqua;
+    }
+
+/* telda selector  */
+    /* select all p that comes after div even and whatever there is element between */
+    div~p{
+        color: green;
+    }
+
+/* attribute selectors */
+    /* get all element that have attribute width */
+
+    [width]{
+        color: brown;
+    }
+    /* get all element that have attribute width = 105px */
+
+    [width="105px"]{
+        color: blue;
+    }
+    /* get all element that have attribute width start with= 1 */
+
+    [width^="1"]{
+        color: green;
+    }
+    /* get all element that have attribute width END  with= 5 */
+
+    [width$="5px"]{
+        color: teal;
+    }
+    /* get all element that have attribute width CONTAIN  0 */
+
+    [width*="0"]{
+        color: red;
+    }
+    /* get all element that have attribute abc and the word 'ccc' */
+
+    [abc~="ccc"]{
+        color: darkgoldenrod;
+    }
+    /* get all element that have attribute abc and start with the word 'ccc' or followed by - */
+
+    [abc|="ccc"]{
+        color: chartreuse;
+    }
+    /* get div element that have attribute abc and start with the word 'ccc' or followed by - */
+
+    div[abc|="ccc"]{
+        color: chartreuse;
+    }
