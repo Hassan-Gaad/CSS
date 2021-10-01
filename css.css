@@ -1,29 +1,33 @@
-/* floating */
+/* display: list-item */
 
-div{
-    /* width: 100px;
-    height: 100px; */
+.container{
+    box-sizing: border-box;
+    border: 3px solid black;
+    margin: 20px;
+    display: list-item;
 }
 
-.red{
 
+
+.red{
+    display: list-item;
     background-color: red;
-    float: left;
 }
 
 .green{
-
-    float: left;
+    width: 250px;
     background-color: green;
 }
 
 .blue{
-   float: left;
+    height: 200px;
     background-color: blue;
 }
 
-.text{
-    clear: left;
+.orange{
+    width:200px;
+    height: 150px;
+    background-color: orange;
 }
 
 
