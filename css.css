@@ -1,79 +1,113 @@
-/* universal selector */
-*{
-    color: black;
+
+
+h1{
+    /* border padding margin */
+    border: 5px solid black;
+    padding: 8px;
+    margin: 8px;
 }
 
-/* combinators selector */
+#div1{
+    /* takes the full width of the file container */
+    width: 100%;
+    background-color: lightgray;
+    height: 50px;
+}
+#div2{
+    /* takes the half width of the file container */
+    width: 50%;
+    background-color: red;
+    height: 40px;
 
-    /* comma combinator */
+}
+#div3{
+    /* takes the half width of the file container */
+    width: 50%;
+    background-color: lawngreen;
+    height: 30px;
 
-h1,h2,h3,h4{
-    color: lightseagreen;
 }
 
-/* space selector  */
-    /* select all p inside div even if it is not it's direct parent */
-    div p
-    {
-        color:blue
+/* box-sizing */
+
+#box{
+    background-color: lightblue;
+    width: 150px; 
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+    border: 10px solid black;
+
+    /* takes padding and border width from the width of the element */
+    box-sizing: border-box;  
+      /* put the padding and border width on to the width of the element so it grows and that is the default behavior */
+    /* box-sizing: content-box; */
     }
 
-/* greater than selector */
-    /* select all p inside div where div its direct parent is div*/
-    div>p{
-        color: blueviolet;
+    /* hide an element */
+    #box{
+        /* hide the element and don't leave a position  */
+        /* display: none;  */
+        /* hide the element and leave a position */
+        /* visibility: hidden; */
     }
 
-/* plus than selector */
-    /* select all FIRST p that comes after div */
-    div+p{
-        color: aqua;
+    /* margins */
+    /* borders */
+
+    #box2{
+
+        background-color: lightgray;
+        width: 150px; 
+        height: 100px;
+        padding: 10px;
+        margin: 10px;
+        /* border width  */
+        border-width: 5px 10px 15px 22px;
+        
+        /* we can add more than on style */
+        border-style: solid dashed dotted;
+        border-color: black green rebeccapurple;
+        /* or */
+        border-color: rgb(red, green, blue);
+        background-color: hsl(125, 40%, 50%);
+        color: transparent;
+
+        /* border radius */
+        border-radius: 20px 40px 30px 10px;
+        /* ellipse */
+        border-radius: 20px/100px;
+        
     }
 
-/* telda selector  */
-    /* select all p that comes after div even and whatever there is element between */
-    div~p{
-        color: green;
+
+    /* border image  */
+    #box3{
+        background-color: lightgray;
+        width: 150px; 
+        height:  100px;
+        padding: 10px;
+        margin: 10px;
+        border: 10px solid black;
+
+        border-image-source: url('./Screenshot\ 2021-10-01\ 014846.png');
+        /* border-image-slice: 40 fill; */
+        border-image-slice: 40 30 30 30;
+
+        border-image-repeat: repeat;
+
+        /* make the image outside the border */
+        border-image-outset: 20px;
     }
 
-/* attribute selectors */
-    /* get all element that have attribute width */
+    /* box shadow */
+    #box4{
+        width: 100px;
+        height: 100px;
+        background-color: lightgray;
 
-    [width]{
-        color: brown;
+        /* offset x, offset y, blur, spread radius, inset>which means the shadow should be outside the box or outside */
+        box-shadow: 10px 8px 10px 10px black;
     }
-    /* get all element that have attribute width = 105px */
 
-    [width="105px"]{
-        color: blue;
-    }
-    /* get all element that have attribute width start with= 1 */
 
-    [width^="1"]{
-        color: green;
-    }
-    /* get all element that have attribute width END  with= 5 */
-
-    [width$="5px"]{
-        color: teal;
-    }
-    /* get all element that have attribute width CONTAIN  0 */
-
-    [width*="0"]{
-        color: red;
-    }
-    /* get all element that have attribute abc and the word 'ccc' */
-
-    [abc~="ccc"]{
-        color: darkgoldenrod;
-    }
-    /* get all element that have attribute abc and start with the word 'ccc' or followed by - */
-
-    [abc|="ccc"]{
-        color: chartreuse;
-    }
-    /* get div element that have attribute abc and start with the word 'ccc' or followed by - */
-
-    div[abc|="ccc"]{
-        color: chartreuse;
-    }
