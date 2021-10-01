@@ -1,61 +1,29 @@
+/* floating */
+
 div{
-    width: 150px;
-    height: 100px;
-
-    color: white;
+    /* width: 100px;
+    height: 100px; */
 }
-
-/* if we assign a position we have to specify the top and the left and so on  
-Also we have to specify the the positioning related or relative to what ? 
-*/
-
-/* 
-if our positioning related to the current view of the page(viewport) whatever if it is scrolling or not ? then we have to choose fixed ,so it taken out of the document flow
-if our positioning related to the body or html page then we have to choose absolute 
-if our positioning related to the normal location then we have to choose Relative
-*/
-
-/* sticky position is a combination of fixed and relative
-you have to give it a top , so when scrolling it turns from relative to fixed with a top value from the viewport
-*/
-
-
-/* z-index and stacking context  */
-/* stacking context is changed when there is a parent or ancestors */
 
 .red{
 
-    position: absolute;
     background-color: red;
-    
+    float: left;
 }
 
 .green{
 
-    position: absolute;
+    float: left;
     background-color: green;
 }
 
 .blue{
-   
-    position: absolute;
-    top: 50px;
-    z-index: 2;
+   float: left;
     background-color: blue;
 }
-.orange{
 
-    position: absolute;
-    z-index: 3;
-    background-color: orange;
-}
-
-.yellow{
-    position: ab;
-    z-index: 1;
-    background-color: yellow;
-    width: 400px;
-    height: 400px;
+.text{
+    clear: left;
 }
 
 
