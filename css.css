@@ -1,33 +1,28 @@
-/* display: list-item */
-
-.container{
+/* Display: table */
+.table{
     box-sizing: border-box;
     border: 3px solid black;
     margin: 20px;
-    display: list-item;
+    display: table; 
 }
 
+.caption{
 
-
-.red{
-    display: list-item;
-    background-color: red;
+    display: table-caption;
+}
+.header{
+display: table-header-group;
 }
 
-.green{
-    width: 250px;
-    background-color: green;
+.body{
+display: table-row-group;
 }
-
-.blue{
-    height: 200px;
-    background-color: blue;
+.footer{
+display: table-footer-group;
 }
-
-.orange{
-    width:200px;
-    height: 150px;
-    background-color: orange;
+.row{
+    display: table-row;
 }
-
-
+.cell{
+display: table-cell;
+}
