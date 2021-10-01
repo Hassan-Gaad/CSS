@@ -1,9 +1,7 @@
-div.red,div.green,div.blue,div.orange{
+div{
     width: 150px;
     height: 100px;
-    margin: 30px;
-    border: 5px solid black;
-    padding: 20px;
+
     color: white;
 }
 
@@ -21,42 +19,43 @@ if our positioning related to the normal location then we have to choose Relativ
 you have to give it a top , so when scrolling it turns from relative to fixed with a top value from the viewport
 */
 
+
+/* z-index and stacking context  */
+/* stacking context is changed when there is a parent or ancestors */
+
 .red{
 
+    position: absolute;
     background-color: red;
+    
 }
 
-.parent-green{
-    position: absolute;
-    /* left: 100px; */
-}
 .green{
 
-    position: sticky;
-    top: 10px;
+    position: absolute;
     background-color: green;
 }
 
-.parent-blue{
-    position: absolute;
-    left: 50px;
-}
 .blue{
+   
     position: absolute;
-    top: 10px;
-    left: 30px;
+    top: 50px;
+    z-index: 2;
     background-color: blue;
 }
 .orange{
 
-
+    position: absolute;
+    z-index: 3;
     background-color: orange;
 }
 
-.parent-red,.parent-blue,.parent-green,.parent-orange{
+.yellow{
+    position: ab;
+    z-index: 1;
     background-color: yellow;
-    border: 5px solid black;
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
 }
+
 
