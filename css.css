@@ -1,12 +1,19 @@
 /* Display: flex --> Makes elements flexible in different screen sizes  */
 /* flex-wrap: wrap-reverse */
+/* flex-direction: row */
+/*  flex-direction : choose the wrapping direction ,row or cross axis*/
+/* the shorthand for flex-wrap and flex-direction is flex-flow */
 
 .container{
     box-sizing: border-box;
     border: 3px solid black;
     margin: 20px;
     display: flex;
-    flex-wrap: wrap-reverse;
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+    /* flex-direction:row-reverse; */
+    /* height: 200px; */
+    flex-flow:row-reverse wrap;
 }
 .red{
     background-color: red;
@@ -22,5 +29,5 @@
 .orange{
     width: 150px;
     height: 150px;
-    background-color:orange;
+    background-color:blueviolet;
 }
