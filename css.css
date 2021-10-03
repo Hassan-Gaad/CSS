@@ -1,7 +1,7 @@
 /* grid : it is the same as Table except it is for layouts */
-/* grid-auto-columns
-grid-auto-flows
-grid-auto-rows
+/* row-gap
+    column-gap
+    gap
 */
 
 .container{
@@ -10,28 +10,16 @@ grid-auto-rows
     margin: 20px;
     padding: 10px;
     display: grid;
-    /* grid-template-columns: 300px 100px;
-    grid-template-columns: 300px 100px auto;
-    grid-template-columns: 300px 100px max-content;
-    grid-template-columns: 25% 100px 1fr 2fr;
-    grid-template-columns: 300px 100px min-content; */
-    /* grid-template-columns: 300px 1fr 2fr; */
-    /* grid-template-columns: 25% 100px minmax(100px,500px); */
-    /* grid-template-columns: repeat(4,25%); */
-    /* grid-template-columns: repeat(4,25% 100px); */
-    /* grid-template-columns: repeat(2,25% 100px) 100px; */
-    /* grid-template-columns: repeat(2,25% 100px) 100px minmax(100px,400px); */
-    /* grid-template-columns: repeat(2,25% 100px) 100px minmax(min-content,max-content); */
-    /* grid-template-columns: 100px fit-content(200px); */
     grid-template-columns: repeat(2,25%);
-    /* grid-template-rows: 100px 200px; */
     /* the size of the new created rows */
     grid-auto-rows: 100px;
-    /* change the default declaration of rows to be columns */
-    grid-auto-flow: column;
-    /* the size of the newly created columns */
-    grid-auto-columns: 250px ;
+    /* the size between rows */
+    row-gap: 10px;
 
+    column-gap: 10px;
+    /* shorthand for row and column gap */
+    gap: 10px 20px;
+    
 }
 .red{
     background-color: red;
