@@ -1,7 +1,8 @@
 /* grid : it is the same as Table except it is for layouts */
-/* row-gap
-    column-gap
-    gap
+/* align-content
+justify-content 
+align-items
+justify-items
 */
 
 .container{
@@ -13,12 +14,18 @@
     grid-template-columns: repeat(2,25%);
     /* the size of the new created rows */
     grid-auto-rows: 100px;
-    /* the size between rows */
-    row-gap: 10px;
-
-    column-gap: 10px;
     /* shorthand for row and column gap */
     gap: 10px 20px;
+    /* justify the content in the center of the grid horizontally*/
+    justify-content: center;
+    /* align the content in the center of the grid vertically*/
+    align-content: center;
+    height: 600px;
+    /* justify the items in the center of its columns horizontally */
+    justify-items: center;
+    /* align the items in the center of its columns vertically */
+    align-items: center;
+
     
 }
 .red{
