@@ -1,8 +1,6 @@
 /* grid : it is the same as Table except it is for layouts */
-/* align-content
-justify-content 
-align-items
-justify-items
+/* grid-template-columns: repeat(auto-fill,100px)
+repeat(auto-fit,100px)
 */
 
 .container{
@@ -11,20 +9,25 @@ justify-items
     margin: 20px;
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat(2,25%);
+    /* creates a column every 100px  */
+    /* grid-template-columns: repeat(auto-fill,100px); */
+    /* if there is no items no more columns will be created ,and center them in the grid */
+    grid-template-columns: repeat(auto-fit,100px);
+
+
     /* the size of the new created rows */
     grid-auto-rows: 100px;
     /* shorthand for row and column gap */
-    gap: 10px 20px;
+    gap: 10px;
     /* justify the content in the center of the grid horizontally*/
     justify-content: center;
     /* align the content in the center of the grid vertically*/
     align-content: center;
-    height: 600px;
+    /* height: 600px; */
     /* justify the items in the center of its columns horizontally */
-    justify-items: center;
+    /* justify-items: center; */
     /* align the items in the center of its columns vertically */
-    align-items: center;
+    /* align-items: center; */
 
     
 }
