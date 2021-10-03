@@ -1,5 +1,5 @@
 /* grid : it is the same as Table except it is for layouts */
-
+/* grid-template-column  */
 
 .container{
     box-sizing: border-box;
@@ -7,10 +7,26 @@
     margin: 20px;
     padding: 10px;
     display: grid;
+    /* grid-template-columns: 300px 100px;
+    grid-template-columns: 300px 100px auto;
+    grid-template-columns: 300px 100px max-content;
+    grid-template-columns: 25% 100px 1fr 2fr;
+    grid-template-columns: 300px 100px min-content; */
+    /* grid-template-columns: 300px 1fr 2fr; */
+    /* grid-template-columns: 25% 100px minmax(100px,500px); */
+    /* grid-template-columns: repeat(4,25%); */
+    /* grid-template-columns: repeat(4,25% 100px); */
+    /* grid-template-columns: repeat(2,25% 100px) 100px; */
+    /* grid-template-columns: repeat(2,25% 100px) 100px minmax(100px,400px); */
+    /* grid-template-columns: repeat(2,25% 100px) 100px minmax(min-content,max-content); */
+    grid-template-columns: 100px fit-content(200px);
+    grid-template-rows: 100px 200px;
+
+
 }
 .red{
     background-color: red;
-    /* if you but any display value for an element in the gride it will out of the grid */
+    /* if you put any display value for an element in the gride it will out of the grid */
    
 }
 .green{
