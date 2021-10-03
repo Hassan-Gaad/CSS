@@ -1,11 +1,25 @@
-/* css body */
+/* images */
 html{
-    background-color: gray;
+    /* height: 50%; */
+
 }
 
 body{
     margin: 0;
-    padding: 0;background-color: slategray;
+    padding: 0;
+    /* height: 50%; */
 
-    height: 100%;
+}
+
+img{
+    /* width: 400px; */
+    width: 50%;
+    max-width: 400px;
+    min-width: 100px;
+    
+
+    /* height: 50%; 
+    max-hight:300px
+    min-hight:100px
+    */
 }
