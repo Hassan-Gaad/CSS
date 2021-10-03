@@ -1,5 +1,8 @@
 /* grid : it is the same as Table except it is for layouts */
-/* grid-template-column  */
+/* grid-auto-columns
+grid-auto-flows
+grid-auto-rows
+*/
 
 .container{
     box-sizing: border-box;
@@ -19,9 +22,15 @@
     /* grid-template-columns: repeat(2,25% 100px) 100px; */
     /* grid-template-columns: repeat(2,25% 100px) 100px minmax(100px,400px); */
     /* grid-template-columns: repeat(2,25% 100px) 100px minmax(min-content,max-content); */
-    grid-template-columns: 100px fit-content(200px);
-    grid-template-rows: 100px 200px;
-
+    /* grid-template-columns: 100px fit-content(200px); */
+    grid-template-columns: repeat(2,25%);
+    /* grid-template-rows: 100px 200px; */
+    /* the size of the new created rows */
+    grid-auto-rows: 100px;
+    /* change the default declaration of rows to be columns */
+    grid-auto-flow: column;
+    /* the size of the newly created columns */
+    grid-auto-columns: 250px ;
 
 }
 .red{
