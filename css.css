@@ -6,6 +6,7 @@
 /* justify-content:center  default stretch  */
 /* align items */
 /* align- content */
+/* flex items :- order , align-self , flex-basis , flex-frow , flex-shrink , flex , order */
 
 .container{
     box-sizing: border-box;
@@ -22,22 +23,38 @@
 .red{
     background-color: red;
     padding: 5px;
+    /* when wrapping wrap all element but save the size of the flex-shrink=0 
+    if you pass a umber greater than 1(default) it will shrink faster than any element less than this number
+    */
+    flex-shrink: 0;
+    /* flex is the shorthand for all the previous ones where the value sequence is : flex-grow , flex-shrink , flex-basis(default is auto) */
+    flex: ;
 }
 .green{
     background-color: green;
     width: 200px;
     padding: 10px;
-
+    order: 1;
+    align-self: flex-start;
 }
 .blue{
     background-color: blue;
     height: 100px;
     padding: 15px;
 
+    /* i works the same as width and height ,except that it takes its size based on the flex direction weather it is column or row */
+    flex-basis: 150px;
+
 }
 .orange{
     width: 150px;
     height: 150px;
     padding: 20px;
-    background-color:blueviolet;
+    background-color:orange;
+    order: 2;
+
+    /* the same as flex-shrink : except it grows rather than shrink 
+    if you gave another element a value greater than the current, grows ratio will be divided between them by the same number ratio
+    */
+    flex-grow: 0;
 }
