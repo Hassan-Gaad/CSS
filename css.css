@@ -1,4 +1,6 @@
-/* images */
+/* SVG 
+scalable vector graphics
+*/
 html{
     /* height: 50%; */
 
@@ -23,3 +25,9 @@ img{
     min-hight:100px
     */
 }
+
+#path30398,#path17112,#path13563,#rect15338{
+    fill: red !important;
+}
+
+
