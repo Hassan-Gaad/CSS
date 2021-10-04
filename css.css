@@ -1,4 +1,6 @@
-/* radial-gradient */
+/* repeating-linear-gradient
+repeating-radial-gradient
+ */
 
 body{
     margin: 0;
@@ -12,13 +14,6 @@ div{
     width: 50%;
     height: 300px;
     border-radius: 5px;
-    /* background-image: radial-gradient(red 50%,blue 50%); */
-    /* background-image: radial-gradient(at left, red,blue,orange ); */
-    /* background-image: radial-gradient(50px 20px at center, red,blue,orange ); */
-    /* background-image: radial-gradient(circle at center, red ,blue ); */
-    /* background-image: radial-gradient(ellipse 100px 90px at center, red 40%,blue 60% ); */
-    /* background-image: radial-gradient(ellipse closest-corner at center, red 40%,blue 60% ); */
-    /* background-image: radial-gradient(ellipse closest-side at 90px 99px, red,blue ); */
-    background-image: radial-gradient(ellipse farthest-side at 90px 99px, red,blue );
-   
+    background-image: repeating-linear-gradient(red 0,blue 20px, orange 30px);
+    background-image: repeating-radial-gradient(red 0,blue 20px, orange 30px);
 }
