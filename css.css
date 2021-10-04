@@ -1,6 +1,5 @@
-/* background-color
-background-image
-background-repeat */
+/* background-origin
+background-clip */
 
 body{
     margin: 0;
@@ -10,6 +9,7 @@ body{
 div{
     border: 5px solid lightblue;
     margin: 20px;
+    padding: 20px;
     width: 500px;
     border-radius: 5px;
     min-height: 300px;
@@ -17,4 +17,10 @@ div{
     background-image: url(./img_woods.jpg);
     /* background-image: url(./img_woods.jpg),url(./Blue_old_car.svg); */
     background-repeat: no-repeat repeat;
+    /* starts from the border */
+    background-origin: border-box;
+
+    /* cutting the image starting from padding box */
+    background-clip: padding-box;
+
 }
