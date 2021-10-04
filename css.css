@@ -1,5 +1,4 @@
-/* repeating-linear-gradient
-repeating-radial-gradient
+/* filter
  */
 
 body{
@@ -11,9 +10,28 @@ div{
     border: 5px solid lightblue;
     margin: 20px;
     padding: 20px;
-    width: 50%;
-    height: 300px;
+    width: 500px;
+    min-height: 280px;
     border-radius: 5px;
-    background-image: repeating-linear-gradient(red 0,blue 20px, orange 30px);
-    background-image: repeating-radial-gradient(red 0,blue 20px, orange 30px);
+    background-image: url(./img_woods.jpg) ;    
+    background-size: cover;
+    /* background-size: 100% 80%; */
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* filter: blur(2px); */
+    /* brightness takes a 100%  */
+    /* filter:brightness(200%); */
+    /* filter: contrast(40%); */
+    /* filter: drop-shadow(10px 10px 20px gray); */
+    /* filter: grayscale(50%); */
+    /* filter: sepia(100%); */
+    /* filter: hue-rotate(270deg); */
+    /* filter: invert(100%); */
+    /* filter: opacity(50%); */
+    /* filter: saturate(50%); */
+     filter: saturate(50%) hue-rotate(270deg);
+
+
+
 }
