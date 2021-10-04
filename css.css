@@ -1,41 +1,16 @@
-/* font-styling
-font-synthesis
-font-variant
+/* line-height 
+font shorthand
  */
 
-
+/* line height works only with block element like div */
 body{
     margin: 0;
     padding: 0;
     height: 2000px;
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
-    /* font-style: italic; */
-
-}
-
-.s1{
-
-    /* prevent the browser to set style or wight automatically */
-    /* font-synthesis: none; */
-    font-weight: 900;
-    font-style: italic;
-    /* condense or make space between characters small depend on font name*/
-    font-stretch: extra-condensed;
-    
-    
-}
-.s2{
-    font-weight: 900;
-    font-style: italic;
-
-    /* used to make something like o2 and so on */
-    font-variant-position: super;
-    
-    /* change the caps of the font */
-    font-variant-caps: all-small-caps;
-
-    /* 0/0 1/0 2/0 shiiiiit */
-    font-variant-numeric: slashed-zero; 
+    line-height: 1.5;
+    /* font shorthand syntax : [ [ <'font-style'> || <font-variant-css21> || <'font-weight'> || <'font-stretch'> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'> ] | caption | icon | menu | message-box | small-caption | status-bar*/
+    /* font: ; */
 
 }
