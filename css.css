@@ -1,27 +1,41 @@
-/* font-family
-font-icon
+/* font-styling
+font-synthesis
+font-variant
  */
-@font-face {
-    font-family: "jetBrains-mono";
-    src: url(./font/JetBrainsMono-ExtraBold.ttf);
-    font-weight: 700;
-}
 
-@font-face {
-    font-family: "jetBrains-mono";
-    src: url(./font/JetBrainsMono-Light.ttf);
-    font-weight: 100;
-}
 
 body{
     margin: 0;
     padding: 0;
-    /* font-family: Arial, Helvetica, sans-serif; */
+    height: 2000px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-style: italic; */
 
-    font-family: "Roboto" "jetBrains-mono" , sans-serif;
-    font-size: 30px;
-    font-weight: 700;
+}
+
+.s1{
+
+    /* prevent the browser to set style or wight automatically */
+    /* font-synthesis: none; */
+    font-weight: 900;
     font-style: italic;
-    color: blueviolet;
+    /* condense or make space between characters small depend on font name*/
+    font-stretch: extra-condensed;
+    
+    
+}
+.s2{
+    font-weight: 900;
+    font-style: italic;
+
+    /* used to make something like o2 and so on */
+    font-variant-position: super;
+    
+    /* change the caps of the font */
+    font-variant-caps: all-small-caps;
+
+    /* 0/0 1/0 2/0 shiiiiit */
+    font-variant-numeric: slashed-zero; 
 
 }
