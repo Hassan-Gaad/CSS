@@ -1,37 +1,25 @@
-/* filter
+/* font-family
  */
+@font-face {
+    font-family: "jetBrains-mono";
+    src: url(./font/JetBrainsMono-ExtraBold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "jetBrains-mono";
+    src: url(./font/JetBrainsMono-Light.ttf);
+    font-weight: 100;
+}
 
 body{
     margin: 0;
     padding: 0;
-}
+    /* font-family: Arial, Helvetica, sans-serif; */
 
-div{
-    border: 5px solid lightblue;
-    margin: 20px;
-    padding: 20px;
-    width: 500px;
-    min-height: 280px;
-    border-radius: 5px;
-    background-image: url(./img_woods.jpg) ;    
-    background-size: cover;
-    /* background-size: 100% 80%; */
-    background-position: center;
-    background-repeat: no-repeat;
-
-    /* filter: blur(2px); */
-    /* brightness takes a 100%  */
-    /* filter:brightness(200%); */
-    /* filter: contrast(40%); */
-    /* filter: drop-shadow(10px 10px 20px gray); */
-    /* filter: grayscale(50%); */
-    /* filter: sepia(100%); */
-    /* filter: hue-rotate(270deg); */
-    /* filter: invert(100%); */
-    /* filter: opacity(50%); */
-    /* filter: saturate(50%); */
-     filter: saturate(50%) hue-rotate(270deg);
-
-
+    font-family: "Roboto" "jetBrains-mono" , sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
 
 }
